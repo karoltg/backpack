@@ -1,0 +1,32 @@
+C:\Users\Karol.A\source\repos\Plecak\Plecak\obj\Debug\Plecak.csprojResolveAssemblyReference.cache
+C:\Users\Karol.A\source\repos\Plecak\Plecak\obj\Debug\Plecak.Properties.Resources.resources
+C:\Users\Karol.A\source\repos\Plecak\Plecak\obj\Debug\Plecak.csproj.GenerateResource.Cache
+C:\Users\Karol.A\source\repos\Plecak\Plecak\obj\Debug\Plecak.csproj.CoreCompileInputs.cache
+C:\Users\Karol.A\source\repos\Plecak\Plecak\bin\Debug\Plecak.exe.config
+C:\Users\Karol.A\source\repos\Plecak\Plecak\bin\Debug\Plecak.exe
+C:\Users\Karol.A\source\repos\Plecak\Plecak\bin\Debug\Plecak.pdb
+C:\Users\Karol.A\source\repos\Plecak\Plecak\obj\Debug\Plecak.exe
+C:\Users\Karol.A\source\repos\Plecak\Plecak\obj\Debug\Plecak.pdb
+C:\Users\Karol.A\source\repos\Plecak\Plecak\obj\Debug\Plecak.fError.resources
+C:\Users\Karol.A\source\repos\Plecak\Plecak\obj\Debug\Plecak.ElementsTable.resources
+C:\Users\lolek\Documents\Visual Studio 2015\Plecak\Plecak\Plecak\bin\Debug\Plecak.exe.config
+C:\Users\lolek\Documents\Visual Studio 2015\Plecak\Plecak\Plecak\obj\Debug\Plecak.exe
+C:\Users\lolek\Documents\Visual Studio 2015\Plecak\Plecak\Plecak\obj\Debug\Plecak.pdb
+C:\Users\lolek\Documents\Visual Studio 2015\Plecak\Plecak\Plecak\bin\Debug\Plecak.exe
+C:\Users\lolek\Documents\Visual Studio 2015\Plecak\Plecak\Plecak\bin\Debug\Plecak.pdb
+C:\Users\lolek\Documents\Visual Studio 2015\Plecak\Plecak\Plecak\obj\Debug\Plecak.csprojResolveAssemblyReference.cache
+C:\Users\lolek\Documents\Visual Studio 2015\Plecak\Plecak\Plecak\obj\Debug\Plecak.ElementsTable.resources
+C:\Users\lolek\Documents\Visual Studio 2015\Plecak\Plecak\Plecak\obj\Debug\Plecak.fError.resources
+C:\Users\lolek\Documents\Visual Studio 2015\Plecak\Plecak\Plecak\obj\Debug\Plecak.Properties.Resources.resources
+C:\Users\lolek\Documents\Visual Studio 2015\Plecak\Plecak\Plecak\obj\Debug\Plecak.csproj.GenerateResource.Cache
+C:\Users\Karol.A\Documents\Visual Studio 2017\Plecak (2)\Plecak\Plecak\Plecak\bin\Debug\Plecak.exe.config
+C:\Users\Karol.A\Documents\Visual Studio 2017\Plecak (2)\Plecak\Plecak\Plecak\bin\Debug\Plecak.exe
+C:\Users\Karol.A\Documents\Visual Studio 2017\Plecak (2)\Plecak\Plecak\Plecak\bin\Debug\Plecak.pdb
+C:\Users\Karol.A\Documents\Visual Studio 2017\Plecak (2)\Plecak\Plecak\Plecak\obj\Debug\Plecak.csprojResolveAssemblyReference.cache
+C:\Users\Karol.A\Documents\Visual Studio 2017\Plecak (2)\Plecak\Plecak\Plecak\obj\Debug\Plecak.ElementsTable.resources
+C:\Users\Karol.A\Documents\Visual Studio 2017\Plecak (2)\Plecak\Plecak\Plecak\obj\Debug\Plecak.fError.resources
+C:\Users\Karol.A\Documents\Visual Studio 2017\Plecak (2)\Plecak\Plecak\Plecak\obj\Debug\Plecak.Properties.Resources.resources
+C:\Users\Karol.A\Documents\Visual Studio 2017\Plecak (2)\Plecak\Plecak\Plecak\obj\Debug\Plecak.csproj.GenerateResource.Cache
+C:\Users\Karol.A\Documents\Visual Studio 2017\Plecak (2)\Plecak\Plecak\Plecak\obj\Debug\Plecak.csproj.CoreCompileInputs.cache
+C:\Users\Karol.A\Documents\Visual Studio 2017\Plecak (2)\Plecak\Plecak\Plecak\obj\Debug\Plecak.exe
+C:\Users\Karol.A\Documents\Visual Studio 2017\Plecak (2)\Plecak\Plecak\Plecak\obj\Debug\Plecak.pdb
