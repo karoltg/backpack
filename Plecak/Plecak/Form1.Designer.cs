@@ -347,12 +347,14 @@
             this.zachłannyCenaMaxToolStripMenuItem.Name = "zachłannyCenaMaxToolStripMenuItem";
             this.zachłannyCenaMaxToolStripMenuItem.Size = new System.Drawing.Size(194, 22);
             this.zachłannyCenaMaxToolStripMenuItem.Text = "Zachłanny cena max";
+            this.zachłannyCenaMaxToolStripMenuItem.Click += new System.EventHandler(this.zachłannyCenaMaxToolStripMenuItem_Click);
             // 
             // zachłannyCenaWagaToolStripMenuItem
             // 
             this.zachłannyCenaWagaToolStripMenuItem.Name = "zachłannyCenaWagaToolStripMenuItem";
             this.zachłannyCenaWagaToolStripMenuItem.Size = new System.Drawing.Size(194, 22);
             this.zachłannyCenaWagaToolStripMenuItem.Text = "zachłanny cena / waga";
+            this.zachłannyCenaWagaToolStripMenuItem.Click += new System.EventHandler(this.zachłannyCenaWagaToolStripMenuItem_Click);
             // 
             // zOgraniczeniemElementówToolStripMenuItem
             // 

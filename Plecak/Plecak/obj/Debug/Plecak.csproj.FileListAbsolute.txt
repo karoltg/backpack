@@ -30,3 +30,13 @@ C:\Users\Karol.A\Documents\Visual Studio 2017\Plecak (2)\Plecak\Plecak\Plecak\ob
 C:\Users\Karol.A\Documents\Visual Studio 2017\Plecak (2)\Plecak\Plecak\Plecak\obj\Debug\Plecak.csproj.CoreCompileInputs.cache
 C:\Users\Karol.A\Documents\Visual Studio 2017\Plecak (2)\Plecak\Plecak\Plecak\obj\Debug\Plecak.exe
 C:\Users\Karol.A\Documents\Visual Studio 2017\Plecak (2)\Plecak\Plecak\Plecak\obj\Debug\Plecak.pdb
+D:\plecak\backpack\Plecak\Plecak\bin\Debug\Plecak.exe.config
+D:\plecak\backpack\Plecak\Plecak\obj\Debug\Plecak.exe
+D:\plecak\backpack\Plecak\Plecak\obj\Debug\Plecak.pdb
+D:\plecak\backpack\Plecak\Plecak\bin\Debug\Plecak.exe
+D:\plecak\backpack\Plecak\Plecak\bin\Debug\Plecak.pdb
+D:\plecak\backpack\Plecak\Plecak\obj\Debug\Plecak.csprojResolveAssemblyReference.cache
+D:\plecak\backpack\Plecak\Plecak\obj\Debug\Plecak.ElementsTable.resources
+D:\plecak\backpack\Plecak\Plecak\obj\Debug\Plecak.fError.resources
+D:\plecak\backpack\Plecak\Plecak\obj\Debug\Plecak.Properties.Resources.resources
+D:\plecak\backpack\Plecak\Plecak\obj\Debug\Plecak.csproj.GenerateResource.Cache

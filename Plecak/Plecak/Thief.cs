@@ -42,7 +42,33 @@ namespace Plecak
             }
         }
 
+        //algorytm zachłanny po cenie max
+        public void n_element_max_price()
+        {
+            LOE = this.bubblesort_max_price(LOE);
+            for(int i = 0; i < LOE.Count; i++)
+            {
+                while(backpack_space_left(LOE[i]) == true)
+                {
+                    BP.Add(LOE[i]);
+                    backpackSpaceLeft -= LOE[i].weight;
+                }
+            }
+        }
 
+        //algorytm zachłanny cena/waga
+        public void n_element_price_weight()
+        {
+            this.bubblesort(LOE);
+            for(int i = 0; i < LOE.Count; i++)
+            {
+                while(backpack_space_left(LOE[i]) == true)
+                {
+                    BP.Add(LOE[i]);
+                    backpackSpaceLeft -= LOE[i].weight;
+                }
+            }
+        }
         //public void quicksort(ListOfElements list, int left, int right)
         //{
         //    int i = left;
@@ -91,7 +117,7 @@ namespace Plecak
         }
 
         //sortuje po cenie, od najdrożyszej do najtańszej
-        public void bubblesort_max_price(ListOfElements list)
+        public ListOfElements bubblesort_max_price(ListOfElements list)
         {
             bool koniec = false;
             ListOfElements pivot = new ListOfElements();
@@ -116,6 +142,7 @@ namespace Plecak
                     break;
 
             }
+            return list;
         }
 
         //sortowanie elementów po cena / waga

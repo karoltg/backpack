@@ -150,6 +150,7 @@ namespace Plecak
 
         }
 
+        //wywoływanie algorytmu zachłanny 0 waga min
         private void zachłannyWagaMinToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Thief thief = new Thief(list,(int)nBackpackSize.Value);
@@ -160,6 +161,31 @@ namespace Plecak
             ElementsTable tableBckpack = new ElementsTable(thief.BP, "Elementy dodane do plecaka");
             tableBckpack.Show();
 
+        }
+
+        //wywoływanie lalgorytmu zachłanny 0 max cena
+        private void zachłannyCenaMaxToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Thief thief = new Thief(list, (int)nBackpackSize.Value);
+            thief.n_element_max_price();
+            ElementsTable table = new ElementsTable(thief.LOE, "Elementy posortowane od cena max");
+            table.Show();
+
+            ElementsTable tableBackpack = new ElementsTable(thief.BP,"Elementy dodane do plecaka");
+            tableBackpack.Show();
+
+        }
+
+        //wywoływanie algorytmu zachłanny 0 cena / waga
+        private void zachłannyCenaWagaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Thief thief = new Thief(list, (int)nBackpackSize.Value);
+            thief.n_element_price_weight();
+            ElementsTable table = new ElementsTable(thief.LOE, "Elementy posortowane cena / waga");
+            table.Show();
+
+            ElementsTable tableBackpack = new ElementsTable(thief.BP, "Elementy dodane do plecaka");
+            tableBackpack.Show();
         }
     }
 }
