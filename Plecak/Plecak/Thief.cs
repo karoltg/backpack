@@ -83,7 +83,7 @@ namespace Plecak
                         koniec = false;
                     }
                 }
-                if (koniec == true) ;
+                if (koniec == true)
                 break;
 
             }
