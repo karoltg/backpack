@@ -52,6 +52,12 @@ namespace Plecak
                 return;
             }
 
+            int copy = 1;
+            if(nMaxCopyOfElement.Value > 1)
+            {
+                copy = (int)nMaxCopyOfElement.Value;
+            }
+
             lError.Visible = false;
 
             Random rnd = new Random();
@@ -60,7 +66,7 @@ namespace Plecak
             {
                 if (list.Count <= 0)
                     list.Clear();
-                list.Add(new Element(rnd.Next((int)nWeightMin.Value, (int)nWeightMax.Value), rnd.Next((int)nPriceMin.Value, (int)nPriceMax.Value)));   
+                list.Add(new Element(rnd.Next((int)nWeightMin.Value, (int)nWeightMax.Value), rnd.Next((int)nPriceMin.Value, (int)nPriceMax.Value), rnd.Next(1,copy)));   
             }
 
             bWeight.Enabled = true;

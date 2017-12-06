@@ -59,6 +59,8 @@
             this.zachłannyCenaMaxToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.zachłannyCenaWagaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.zOgraniczeniemElementówToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.nMaxCopyOfElement = new System.Windows.Forms.NumericUpDown();
+            this.label9 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.nWeightMin)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nWeightMax)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nPriceMin)).BeginInit();
@@ -66,6 +68,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.nBackpackSize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nNumberOfElements)).BeginInit();
             this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nMaxCopyOfElement)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -211,7 +214,7 @@
             // 
             // nBackpackSize
             // 
-            this.nBackpackSize.Location = new System.Drawing.Point(337, 57);
+            this.nBackpackSize.Location = new System.Drawing.Point(340, 57);
             this.nBackpackSize.Maximum = new decimal(new int[] {
             1000,
             0,
@@ -224,7 +227,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(334, 41);
+            this.label8.Location = new System.Drawing.Point(337, 41);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(86, 13);
             this.label8.TabIndex = 20;
@@ -362,11 +365,34 @@
             this.zOgraniczeniemElementówToolStripMenuItem.Size = new System.Drawing.Size(224, 22);
             this.zOgraniczeniemElementówToolStripMenuItem.Text = "Z ograniczeniem elementów";
             // 
+            // nMaxCopyOfElement
+            // 
+            this.nMaxCopyOfElement.Location = new System.Drawing.Point(340, 116);
+            this.nMaxCopyOfElement.Maximum = new decimal(new int[] {
+            100000,
+            0,
+            0,
+            0});
+            this.nMaxCopyOfElement.Name = "nMaxCopyOfElement";
+            this.nMaxCopyOfElement.Size = new System.Drawing.Size(100, 20);
+            this.nMaxCopyOfElement.TabIndex = 26;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(340, 100);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(122, 13);
+            this.label9.TabIndex = 27;
+            this.label9.Text = "Max ilość kopii elementu";
+            // 
             // fError
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(498, 341);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.nMaxCopyOfElement);
             this.Controls.Add(this.weightError);
             this.Controls.Add(this.priceError);
             this.Controls.Add(this.lError);
@@ -399,6 +425,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.nNumberOfElements)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nMaxCopyOfElement)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -436,6 +463,8 @@
         private System.Windows.Forms.ToolStripMenuItem zachłannyCenaMaxToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem zachłannyCenaWagaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem zOgraniczeniemElementówToolStripMenuItem;
+        private System.Windows.Forms.NumericUpDown nMaxCopyOfElement;
+        private System.Windows.Forms.Label label9;
     }
 }
 
