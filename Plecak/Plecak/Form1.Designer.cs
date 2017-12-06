@@ -61,6 +61,9 @@
             this.zOgraniczeniemElementówToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.nMaxCopyOfElement = new System.Windows.Forms.NumericUpDown();
             this.label9 = new System.Windows.Forms.Label();
+            this.zachłannyWagaMinToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.zachłannyCenaMaxToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.zachłannyCenaWagaToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.nWeightMin)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nWeightMax)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nPriceMin)).BeginInit();
@@ -361,6 +364,10 @@
             // 
             // zOgraniczeniemElementówToolStripMenuItem
             // 
+            this.zOgraniczeniemElementówToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.zachłannyWagaMinToolStripMenuItem1,
+            this.zachłannyCenaMaxToolStripMenuItem1,
+            this.zachłannyCenaWagaToolStripMenuItem1});
             this.zOgraniczeniemElementówToolStripMenuItem.Name = "zOgraniczeniemElementówToolStripMenuItem";
             this.zOgraniczeniemElementówToolStripMenuItem.Size = new System.Drawing.Size(224, 22);
             this.zOgraniczeniemElementówToolStripMenuItem.Text = "Z ograniczeniem elementów";
@@ -385,6 +392,27 @@
             this.label9.Size = new System.Drawing.Size(122, 13);
             this.label9.TabIndex = 27;
             this.label9.Text = "Max ilość kopii elementu";
+            // 
+            // zachłannyWagaMinToolStripMenuItem1
+            // 
+            this.zachłannyWagaMinToolStripMenuItem1.Name = "zachłannyWagaMinToolStripMenuItem1";
+            this.zachłannyWagaMinToolStripMenuItem1.Size = new System.Drawing.Size(184, 22);
+            this.zachłannyWagaMinToolStripMenuItem1.Text = "Zachłanny waga min";
+            this.zachłannyWagaMinToolStripMenuItem1.Click += new System.EventHandler(this.zachłannyWagaMinToolStripMenuItem1_Click);
+            // 
+            // zachłannyCenaMaxToolStripMenuItem1
+            // 
+            this.zachłannyCenaMaxToolStripMenuItem1.Name = "zachłannyCenaMaxToolStripMenuItem1";
+            this.zachłannyCenaMaxToolStripMenuItem1.Size = new System.Drawing.Size(184, 22);
+            this.zachłannyCenaMaxToolStripMenuItem1.Text = "Zachłanny cena max";
+            this.zachłannyCenaMaxToolStripMenuItem1.Click += new System.EventHandler(this.zachłannyCenaMaxToolStripMenuItem1_Click);
+            // 
+            // zachłannyCenaWagaToolStripMenuItem1
+            // 
+            this.zachłannyCenaWagaToolStripMenuItem1.Name = "zachłannyCenaWagaToolStripMenuItem1";
+            this.zachłannyCenaWagaToolStripMenuItem1.Size = new System.Drawing.Size(196, 22);
+            this.zachłannyCenaWagaToolStripMenuItem1.Text = "Zachłanny cena / waga";
+            this.zachłannyCenaWagaToolStripMenuItem1.Click += new System.EventHandler(this.zachłannyCenaWagaToolStripMenuItem1_Click);
             // 
             // fError
             // 
@@ -465,6 +493,9 @@
         private System.Windows.Forms.ToolStripMenuItem zOgraniczeniemElementówToolStripMenuItem;
         private System.Windows.Forms.NumericUpDown nMaxCopyOfElement;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.ToolStripMenuItem zachłannyWagaMinToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem zachłannyCenaMaxToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem zachłannyCenaWagaToolStripMenuItem1;
     }
 }
 

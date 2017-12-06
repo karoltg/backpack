@@ -73,15 +73,6 @@ namespace Plecak
             bPrice.Enabled = true;
             listaWygenerowanychElementówToolStripMenuItem.Enabled = true;
             listaPosortowamaCenaWagaToolStripMenuItem.Enabled = true;
-            
-           
-            //kod do sprawdzenia : 
-            Thief thief = new Thief();
-            //thief.bubblesort(list);
-
-
-
-
 
         }
 
@@ -156,7 +147,7 @@ namespace Plecak
 
         }
 
-        //wywoływanie algorytmu zachłanny 0 waga min
+        ///wywoływanie algorytmu zachłanny 0 waga min
         private void zachłannyWagaMinToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Thief thief = new Thief(list,(int)nBackpackSize.Value);
@@ -169,7 +160,7 @@ namespace Plecak
 
         }
 
-        //wywoływanie lalgorytmu zachłanny 0 max cena
+        ///wywoływanie lalgorytmu zachłanny 0 max cena
         private void zachłannyCenaMaxToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Thief thief = new Thief(list, (int)nBackpackSize.Value);
@@ -182,11 +173,62 @@ namespace Plecak
 
         }
 
-        //wywoływanie algorytmu zachłanny 0 cena / waga
+        ///wywoływanie algorytmu zachłanny 0 cena / waga
         private void zachłannyCenaWagaToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Thief thief = new Thief(list, (int)nBackpackSize.Value);
             thief.n_element_price_weight();
+            ElementsTable table = new ElementsTable(thief.LOE, "Elementy posortowane cena / waga");
+            table.Show();
+
+            ElementsTable tableBackpack = new ElementsTable(thief.BP, "Elementy dodane do plecaka");
+            tableBackpack.Show();
+        }
+
+        /// <summary>
+        /// zachłanny wyświetla plecak i listę elementów oraż ilość, zależny od wagi elementu
+        /// zmniejsza ilość elementów na liście
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void zachłannyWagaMinToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Thief thief = new Thief(list, (int)nBackpackSize.Value);
+            thief.r_element_min_weight();
+            ElementsTable table = new ElementsTable(thief.LOE, "Elementy posortowane od waga min");
+            table.Show();
+
+            ElementsTable tableBckpack = new ElementsTable(thief.BP, "Elementy dodane do plecaka");
+            tableBckpack.Show();
+        }
+
+        /// <summary>
+        /// zachłanny wyświetla plecak i listę elementów oraz ilość, zależny od ceny elementu
+        /// zmniejsza ilość elementów
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void zachłannyCenaMaxToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Thief thief = new Thief(list, (int)nBackpackSize.Value);
+            thief.r_element_max_price();
+            ElementsTable table = new ElementsTable(thief.LOE, "Elementy posortowane od cena max");
+            table.Show();
+
+            ElementsTable tableBackpack = new ElementsTable(thief.BP, "Elementy dodane do plecaka");
+            tableBackpack.Show();
+        }
+
+        /// <summary>
+        /// zachłanny wyświetla plecak i listę elementów oraz ilość, zależny od ceny / masy elementu
+        /// zmniejsza ilość elementów
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void zachłannyCenaWagaToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Thief thief = new Thief(list, (int)nBackpackSize.Value);
+            thief.r_element_price_weight();
             ElementsTable table = new ElementsTable(thief.LOE, "Elementy posortowane cena / waga");
             table.Show();
 

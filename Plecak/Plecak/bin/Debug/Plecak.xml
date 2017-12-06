@@ -1,0 +1,104 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Plecak</name>
+    </assembly>
+    <members>
+        <member name="F:Plecak.ElementsTable.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Plecak.ElementsTable.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Plecak.ElementsTable.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Plecak.fError.zachłannyWagaMinToolStripMenuItem_Click(System.Object,System.EventArgs)">
+            wywoływanie algorytmu zachłanny 0 waga min
+        </member>
+        <member name="M:Plecak.fError.zachłannyCenaMaxToolStripMenuItem_Click(System.Object,System.EventArgs)">
+            wywoływanie lalgorytmu zachłanny 0 max cena
+        </member>
+        <member name="M:Plecak.fError.zachłannyCenaWagaToolStripMenuItem_Click(System.Object,System.EventArgs)">
+            wywoływanie algorytmu zachłanny 0 cena / waga
+        </member>
+        <member name="M:Plecak.fError.zachłannyWagaMinToolStripMenuItem1_Click(System.Object,System.EventArgs)">
+            <summary>
+            zachłanny wyświetla plecak i listę elementów oraż ilość,
+            zmniejsza ilość elementów na liście
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:Plecak.fError.components">
+            <summary>
+            Wymagana zmienna projektanta.
+            </summary>
+        </member>
+        <member name="M:Plecak.fError.Dispose(System.Boolean)">
+            <summary>
+            Wyczyść wszystkie używane zasoby.
+            </summary>
+            <param name="disposing">prawda, jeżeli zarządzane zasoby powinny zostać zlikwidowane; Fałsz w przeciwnym wypadku.</param>
+        </member>
+        <member name="M:Plecak.fError.InitializeComponent">
+            <summary>
+            Metoda wymagana do obsługi projektanta — nie należy modyfikować
+            jej zawartości w edytorze kodu.
+            </summary>
+        </member>
+        <member name="M:Plecak.Program.Main">
+            <summary>
+            Główny punkt wejścia dla aplikacji.
+            </summary>
+        </member>
+        <member name="M:Plecak.Thief.n_element_min_weight">
+            <summary> algorytm zachłanny zwracający załadowany plecak przez elementy od najlżejszych </summary>
+        </member>
+        <member name="M:Plecak.Thief.r_element_min_weight">
+            <summary>
+            algorytm zachłanny zwracałący załadowany plecak przez elementy od najlżejszych,
+            odejmuje liczbę elmentów z lisy
+            </summary>
+        </member>
+        <member name="M:Plecak.Thief.n_element_max_price">
+            <summary>algorytm zachłanny po cenie max </summary>
+        </member>
+        <member name="M:Plecak.Thief.r_element_max_price">
+            <summary>
+            algorytm zachłanny po cenie max,
+            odejmuje elementy z listy
+            </summary>
+        </member>
+        <member name="M:Plecak.Thief.n_element_price_weight">
+            a<summary>lgorytm zachłanny cena/waga </summary>
+        </member>
+        <member name="M:Plecak.Thief.backpack_space_left(Plecak.Element)">
+            <summary>sprawdzanie czy coś jeszcze do plecaka wejdzie, zwraca true jeżeli wejdzie </summary>
+        </member>
+        <member name="T:Plecak.Properties.Resources">
+            <summary>
+              Silnie typizowana klasa zasobów do wyszukiwania zlokalizowanych ciągów itd.
+            </summary>
+        </member>
+        <member name="P:Plecak.Properties.Resources.ResourceManager">
+            <summary>
+              Zwraca buforowane wystąpienie składnika ResourceManager używane przez tę klasę.
+            </summary>
+        </member>
+        <member name="P:Plecak.Properties.Resources.Culture">
+            <summary>
+              Przesłania właściwość CurrentUICulture bieżącego wątku dla wszystkich
+              przypadków przeszukiwania zasobów za pomocą tej silnie typizowanej klasy zasobów.
+            </summary>
+        </member>
+    </members>
+</doc>

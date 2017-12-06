@@ -10,14 +10,17 @@ namespace Plecak
     {
         public ListOfElements LOE;
         public Backpack BP = new Backpack();
+        public int backpackSize { get; set; }
+        private int backpackSpaceLeft { get; set; }
 
+        #region dodatkowe zmienne nieużywane
         //public int weightMin { get; set; }
         //public int weightMax { get; set; }
         //public int priceMin { get; set; }
         //public int priceMax { get; set; }
         //public int numberOfElements { get; set; }
-        public int backpackSize { get; set; }
-        private int backpackSpaceLeft { get; set; }
+        #endregion
+
 
         public Thief() { }
         public Thief(ListOfElements list, int backpackSize)
@@ -28,7 +31,8 @@ namespace Plecak
         }
 
 
-        // algorytm zachłanny zwracający załadowany plecak przez elementy od najlżejszych
+        #region plecak od najlżejszego
+        ///<summary> algorytm zachłanny zwracający załadowany plecak przez elementy od najlżejszych </summary>
         public void n_element_min_weight()
         {
             LOE = this.bubblesort_min_weight(LOE);
@@ -39,10 +43,34 @@ namespace Plecak
                     BP.Add(LOE[i]);
                     backpackSpaceLeft -= LOE[i].weight;
                 }
+                if (backpackSpaceLeft == 0)
+                    break;
             }
         }
 
-        //algorytm zachłanny po cenie max
+        /// <summary>
+        /// algorytm zachłanny zwracałący załadowany plecak przez elementy od najlżejszych,
+        /// odejmuje liczbę elmentów z lisy
+        /// </summary>
+        public void r_element_min_weight()
+        {
+            this.bubblesort_min_weight(LOE);
+            for(int i = 0; i < LOE.Count; i++)
+            {
+                while(backpack_space_left(LOE[i]) == true && LOE[i].elementCount > 0)
+                {
+                    BP.Add(LOE[i]);
+                    backpackSpaceLeft -= LOE[i].weight;
+                    LOE[i].elementCount--;
+                }
+                if (backpackSpaceLeft <= 0 || LOE[i].weight > backpackSpaceLeft)
+                        break;
+            }
+        }
+        #endregion
+
+        #region plecak od najdroższego
+        ///<summary>algorytm zachłanny po cenie max </summary>
         public void n_element_max_price()
         {
             LOE = this.bubblesort_max_price(LOE);
@@ -53,10 +81,34 @@ namespace Plecak
                     BP.Add(LOE[i]);
                     backpackSpaceLeft -= LOE[i].weight;
                 }
+                if (backpackSpaceLeft <= 0)
+                    break;
             }
         }
 
-        //algorytm zachłanny cena/waga
+        /// <summary>
+        /// algorytm zachłanny po cenie max,
+        /// odejmuje elementy z listy
+        /// </summary>
+        public void r_element_max_price()
+        {
+            LOE = this.bubblesort_max_price(LOE);
+            for (int i = 0; i < LOE.Count; i++)
+            {
+                while (backpack_space_left(LOE[i]) == true || LOE[i].elementCount > 0)
+                {
+                    BP.Add(LOE[i]);
+                    backpackSpaceLeft -= LOE[i].weight;
+                    LOE[i].elementCount--;
+                }
+                if (backpackSpaceLeft <= 0)
+                    break;
+            }
+        }
+        #endregion
+
+        #region plecak cena / waga
+        ///a<summary>lgorytm zachłanny cena/waga </summary>
         public void n_element_price_weight()
         {
             this.bubblesort(LOE);
@@ -67,17 +119,30 @@ namespace Plecak
                     BP.Add(LOE[i]);
                     backpackSpaceLeft -= LOE[i].weight;
                 }
+                if (backpackSpaceLeft <= 0)
+                    break;
             }
         }
-        //public void quicksort(ListOfElements list, int left, int right)
-        //{
-        //    int i = left;
-        //    int j = right;
-        //    int pivot;
-        //}
+        
+        public void r_element_price_weight()
+        {
+            this.bubblesort(LOE);
+            for (int i = 0; i < LOE.Count; i++)
+            {
+                while (backpack_space_left(LOE[i]) == true || LOE[i].elementCount > 0)
+                {
+                    BP.Add(LOE[i]);
+                    backpackSpaceLeft -= LOE[i].weight;
+                    LOE[i].elementCount--;
+                }
+                if (backpackSpaceLeft <= 0)
+                    break;
+            }
+        }
+        
+        #endregion
 
-
-        //sprawdzanie czy coś jeszcze do plecaka wejdzie, zwraca true jeżeli wejdzie
+        ///<summary>sprawdzanie czy coś jeszcze do plecaka wejdzie, zwraca true jeżeli wejdzie </summary>
         private bool backpack_space_left(Element element)
         {
             if (backpackSpaceLeft >= element.weight)
@@ -86,7 +151,7 @@ namespace Plecak
             }
             return false;
         }
-
+        #region sortowania
         //sortowanie listy po masie, od najmniejszej do największej
         public ListOfElements bubblesort_min_weight(ListOfElements list)
         {
@@ -179,5 +244,7 @@ namespace Plecak
                         
             LOE = list;
         }
+        #endregion
+
     }
 }
