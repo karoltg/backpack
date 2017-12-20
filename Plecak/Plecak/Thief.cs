@@ -30,6 +30,50 @@ namespace Plecak
             backpackSpaceLeft = backpackSize;
         }
 
+        #region najlepszy wybór
+        /// <summary>
+        /// najlepszy wybór jaki można zapakować do plecaka
+        /// </summary>
+        public void best_pick()
+        {
+            int[] backpackPrice = new int[backpackSize];
+            for (int i = 0; i < backpackPrice.Length; i++)
+            { backpackPrice[i] = 0; }
+
+            int[] backpackBestPrice = new int[backpackSize];
+            int currentPrice = 0;
+            int positionWeight = 0;
+
+            for (int j = 0; j < LOE.Count; j++)
+            {
+                positionWeight = 0;
+                for (int i = 0; i < backpackSize; i++)
+                {
+                    positionWeight++;
+                    currentPrice = backpackPrice[i];
+
+                    
+
+                }
+
+            }
+
+        }
+
+        private int backpack_value(int [] backpackValue)
+        {
+            int value = 0;
+
+            for(int i=0; i<backpackValue.Length; i++)
+            {
+                value += backpackValue[i];
+            }
+
+            return value;
+        }
+
+        #endregion
+
 
         #region plecak od najlżejszego
         ///<summary> algorytm zachłanny zwracający załadowany plecak przez elementy od najlżejszych </summary>
