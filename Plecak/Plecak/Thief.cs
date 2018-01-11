@@ -36,40 +36,33 @@ namespace Plecak
         /// </summary>
         public void best_pick()
         {
-            int[] backpackPrice = new int[backpackSize];
-            for (int i = 0; i < backpackPrice.Length; i++)
-            { backpackPrice[i] = 0; }
-
-            int[] backpackBestPrice = new int[backpackSize];
-            int currentPrice = 0;
-            int positionWeight = 0;
-
-            for (int j = 0; j < LOE.Count; j++)
+            int bpSpace = 0;
+            int lastValue = 0;
+            int[][] tab = new int[backpackSize][];
+            for(int i=0; i<backpackSize; i++)
             {
-                positionWeight = 0;
-                for (int i = 0; i < backpackSize; i++)
-                {
-                    positionWeight++;
-                    currentPrice = backpackPrice[i];
+                tab[i] = new int[LOE.Count];
+            }
 
-                    
+           
+
+            for(int i=0; i<LOE.Count; i++)
+            {
+                bpSpace = 1;
+                for(int j=0; j<backpackSize; j++)
+                {
+
+                    if(tab[j][i] )
+
 
                 }
 
             }
 
-        }
 
-        private int backpack_value(int [] backpackValue)
-        {
-            int value = 0;
 
-            for(int i=0; i<backpackValue.Length; i++)
-            {
-                value += backpackValue[i];
-            }
 
-            return value;
+
         }
 
         #endregion
